@@ -1,13 +1,10 @@
-
-version: "3.8"
-
 services:
   backend:
     build:
       context: ./backend
       dockerfile: backend.Dockerfile  # Explicitly specifying the backend Dockerfile
     ports:
-      - "8080:8080"
+      - "8000:8000"
     depends_on:
       - db
     environment:
